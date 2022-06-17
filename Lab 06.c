@@ -1,7 +1,7 @@
 #include<stdio.h>
 int main()
 {
-    int row, clm, srch, i, j;
+    int row, clm, srch, i, j, flag=0;
     printf("Enter rows : ");
     scanf("%d",&row);
     printf("\nEnter columns : ");
@@ -26,10 +26,13 @@ int main()
         for(j=0;j<clm;j++){
             if(array[i][j]==srch){
                 printf("\n\nFound!!\n\n");
-                exit (0);
+                flag=1;
             }
         }
     }
+    if(flag==0)
+        {
     printf("\n\nNot Found!!\n\n");
+        }
     return 0;
 }
