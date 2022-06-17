@@ -3,7 +3,7 @@ int main()
 {
     int arr[]={10, 20, 30, 40, 50};
     int x;
-    int i, n=5;
+    int i, n=5, flag=0;
     printf("The given array is: ");
      for(i=0;i<n;i++)
     {
@@ -15,8 +15,11 @@ int main()
         if(x==arr[i])
     {
        printf("\nFound\n");
-       exit (0);
+       flag=1;
     }
+    if(flag==0)
+        {
     printf("\nNot Found\n");
     return 0;
+        }
 }
