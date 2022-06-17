@@ -16,6 +16,8 @@ int main()
         case 3: push();
         break;
         case 4: display();
+        break;
+        case 5: exit (0);
     }
     }
 }
