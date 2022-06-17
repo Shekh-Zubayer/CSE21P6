@@ -4,7 +4,7 @@ int main()
 {
     while(1){
     int ch;
-    printf("1.Create queue\n2.pop\n3.push\n4.display");
+    printf("1.Create queue\n2.pop\n3.push\n4.display\n5.exit");
     printf("\n\nEnter choice: ");
     scanf("%d",&ch);
     switch(ch)
